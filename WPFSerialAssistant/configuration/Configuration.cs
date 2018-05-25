@@ -171,7 +171,7 @@ namespace WPFSerialAssistant
         public static void Save(Configuration conf, string path)
         {
             // 构建配置信息的json字符串
-            string confStr = Newtonsoft.Json.JsonConvert.SerializeObject(conf.ConfigInfo);
+            string confStr = Newtonsoft.Json.JsonConvert.SerializeObject(conf.ConfigInfo, Newtonsoft.Json.Formatting.Indented);
 
             // 如果指定的配置路径不存在，则新建一个
             if (System.IO.File.Exists(path) == false)
