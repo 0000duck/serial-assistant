@@ -83,14 +83,12 @@
                                 </Grid.ColumnDefinitions>
                                 <TextBlock Text="通讯波特率"  VerticalAlignment="Center" Grid.Column="0"></TextBlock>
                                 <ComboBox Name="baudRateComboBox" Width="120" Grid.Column="1" IsEditable="True" Padding="5">
-                                    <ComboBoxItem>1200</ComboBoxItem>
-                                    <ComboBoxItem>2400</ComboBoxItem>
-                                    <ComboBoxItem>4800</ComboBoxItem>
-                                    <ComboBoxItem IsSelected="True">9600</ComboBoxItem>
-                                    <ComboBoxItem>19200</ComboBoxItem>
-                                    <ComboBoxItem>38400</ComboBoxItem>
-                                    <ComboBoxItem>115200</ComboBoxItem>
-                                </ComboBox>
+                                    <ComboBoxItem Content="9600"/>
+                                    <ComboBoxItem Content="19200"/>
+                                    <ComboBoxItem Content="38400"/>
+                                    <ComboBoxItem Content="57600"/>
+                                    <ComboBoxItem IsSelected="True" Content="115200"/>
+                                </ComboBox>                                
                             </Grid>
                             <!--奇偶校验位-->
                             <Grid Margin="0,0,0,10" DockPanel.Dock="Top">

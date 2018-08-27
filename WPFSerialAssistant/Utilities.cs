@@ -71,7 +71,14 @@ namespace WPFSerialAssistant
 
                     foreach (var item in grp)
                     {
-                        src.Add(Convert.ToByte(item, 16));
+                        try
+                        {
+                            byte data = Convert.ToByte(item, 16);
+                            src.Add(data);
+                        } catch
+                        {
+
+                        }
                     }
 
                     // 转换成字符串
